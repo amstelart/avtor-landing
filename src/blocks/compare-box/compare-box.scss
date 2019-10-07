@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока compare-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.compare-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__part {
+    flex-basis: 50%;
+    max-width: 50%;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+
+  &__item {
+
+    background-color: #f5f5f5;
+    min-height: 130px;
+
+    &.green {
+      background-color: #cdf8cd;
+    }
+  }
+}

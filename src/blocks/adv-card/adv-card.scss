@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока adv-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.adv-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+
+}

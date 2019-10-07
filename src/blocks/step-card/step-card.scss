@@ -1,0 +1,13 @@
+// В этом файле должны быть стили для БЭМ-блока step-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.step-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  p {
+    font-size: rem(14);
+  }
+
+}

@@ -1,0 +1,13 @@
+// В этом файле должны быть стили для БЭМ-блока request-form-wrap, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.request-form-wrap {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #fff;
+  text-align: center;
+  padding: 5%;
+
+}

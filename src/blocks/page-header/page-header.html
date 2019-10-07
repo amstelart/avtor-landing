@@ -1,0 +1,56 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header" role="banner">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Этапы работ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts-phone">
+        <i class="fas fa-mobile-alt"></i>
+        <a href="tel:+79219280855" class="contacts-phone__num">+7 921 928 08 55</a>
+        <p>Есть вопросы? Звоните!</p>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <div class="container">
+      <p><span class="text-uppercase">Шторы на заказ</span> <br>в Санкт-Петербурге и Ленинградской области</p>
+      <div class="social">
+        <a class="social__item" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a class="social__item" href="#" target="_blank"><i class="fas fa-phone"></i></a>
+        <a class="social__item" href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+  </div>
+</header>

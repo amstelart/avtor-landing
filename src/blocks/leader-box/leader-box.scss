@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока leader-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.leader-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: solid 2px #eec597;
+  padding: 6% 10%;
+  margin-top: 170px;
+
+  &__card {
+    margin-top: -170px;
+    margin-bottom: 20px;
+  }
+
+  &__img-wrap {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 1px 0px 60px rgba(255,255,255,1);
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

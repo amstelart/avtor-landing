@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока action-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.action-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__content-wrap {
+    background-color: #37230c;
+    background-image: url('../img/action-box-img.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    flex-grow: 1;
+  }
+
+  &__form-wrap {
+    background: #fff;
+    flex-basis: 390px;
+    max-width: 390px;
+    flex-shrink: 0;
+  }
+}

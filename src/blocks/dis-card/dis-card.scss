@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока dis-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+
+.dis-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  color: #403631;
+  height: 100%;
+
+  span {
+    color: #dd4445;
+  }
+}

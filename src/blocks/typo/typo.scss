@@ -1,0 +1,29 @@
+// Этот блок ответственен ТОЛЬКО за типографику проекта.
+// Не пишите тут какую-либо стороннюю стилизацию.
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #625c56;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: Georgia;
+  font-weight: normal;
+  color: #403631;
+}
+
+h1,.h1 {
+  font-size: rem(36);
+}
+
+h2,.h2 {
+  font-size: rem(30);
+}
+
+h3,.h3 {
+  font-size: rem(24);
+}
+
+h5,.h5 {
+  font-size: rem(18);
+}
