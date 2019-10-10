@@ -9,8 +9,16 @@
 
   color: #403631;
   height: 100%;
+  text-align: center;
 
   span {
     color: #dd4445;
+  }
+
+  &__icon-wrap {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -154,7 +154,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue ;
+$primary:       #e1383a ;
 $secondary:     $gray-600 ;
 $success:       $green ;
 $info:          $cyan ;
@@ -468,7 +468,7 @@ $table-border-level:          -6 ;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem ;
+$input-btn-padding-y:         .75rem ;
 $input-btn-padding-x:         .75rem ;
 $input-btn-font-family:       null ;
 $input-btn-font-size:         $font-size-base ;

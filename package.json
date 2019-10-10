@@ -58,6 +58,7 @@
     "lint-staged": "^5.0.0",
     "merge-stream": "^1.0.1",
     "mkdirp": "^0.5.1",
+    "owl.carousel": "^2.3.4",
     "postcss-image-inliner": "^1.0.6",
     "postcss-import": "^11.0.0",
     "postcss-inline-svg": "^3.0.0",

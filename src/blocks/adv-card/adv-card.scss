@@ -7,5 +7,12 @@
   $block-name:                &; // #{$block-name}__element
 
   background: #fff;
+  height: 100%;
 
+  &__icon-wrap {
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+  }
 }

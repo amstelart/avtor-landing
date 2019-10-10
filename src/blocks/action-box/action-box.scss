@@ -7,6 +7,20 @@
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 2px;
+    background-color: #e1383a;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+  }
 
   &__content-wrap {
     background-color: #37230c;

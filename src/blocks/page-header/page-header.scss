@@ -6,6 +6,41 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  height: 200px;
   border-bottom: 1px solid $border-color;
+  margin-bottom: 60px;
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+
+    p {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .navbar-light {
+
+    .navbar-nav {
+
+      .nav-item {
+
+        &.active {
+
+          .nav-link {
+            color: #8b6647;
+          }
+        }
+      }
+
+      .nav-link {
+        color: #000;
+      }
+    }
+  }
 }
