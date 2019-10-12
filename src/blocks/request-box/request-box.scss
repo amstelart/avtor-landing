@@ -11,6 +11,10 @@
   padding: 6% 4%;
   position: relative;
 
+  @include media-breakpoint-down(md) {
+    padding-bottom: 40px;
+  }
+
   p {
     margin-bottom: 0;
   }
@@ -21,5 +25,9 @@
     left: 50%;
     min-width: 300px;
     transform: translateX(-50%);
+
+    @include media-breakpoint-down(md) {
+      min-width: 200px;
+    }
   }
 }

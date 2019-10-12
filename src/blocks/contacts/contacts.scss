@@ -7,15 +7,26 @@
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
 }
 
 .contacts-card {
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-right: 80px;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+  }
 
   &__img-wrap {
     width: 120px;

@@ -6,20 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  display: flex;
-
-  &__part {
-    flex-basis: 50%;
-    max-width: 50%;
-
-    &:first-child {
-      margin-right: 15px;
-    }
-
-    &:last-child {
-      margin-left: 15px;
-    }
-  }
+  position: relative;
+  background: #fff;
+  z-index: 1;
 
   &__item {
 

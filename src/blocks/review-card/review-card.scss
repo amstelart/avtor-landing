@@ -12,11 +12,22 @@
   align-items: flex-start;
   border-bottom: 2px solid $border-color;
 
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+
   &__img-wrap {
     flex-shrink: 0;
     padding-right: 30px;
     max-width: 25%;
     flex-basis: 25%;
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      flex-basis: 100%;
+      margin-bottom: 15px;
+      padding-right: 0;
+    }
   }
 
   &__content {

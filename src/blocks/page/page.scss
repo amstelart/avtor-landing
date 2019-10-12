@@ -66,12 +66,8 @@ img {
   color: #000;
 }
 
-.fz-md {
-  font-size: 14px;
-}
-
-.fz-xl {
-  font-size: rem(24);
+.text-secondary {
+  color: #f18d38 !important;
 }
 
 .box-shadow {
@@ -99,6 +95,10 @@ img {
   padding: 3%;
   border-radius: 2px;
 
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+
   p {
     margin: 0;
   }
@@ -108,6 +108,10 @@ img {
     font-weight: 700;
     color: #eec597;
     line-height: 1.4;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+    }
   }
 }
 

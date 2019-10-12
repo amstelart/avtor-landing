@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока landing-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.landing-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include media-breakpoint-down(md) {
+
+    &.py-5 {
+      padding-bottom: 1.7rem !important;
+      padding-top: 1.7rem !important;
+    }
+  }
+
+  &--compare {
+
+    @include media-breakpoint-up(xl) {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../img/compare-box-img.png');
+    }
+  }
+
+  &--services {
+    background-color: #fbf6f1;
+  }
+}

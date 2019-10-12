@@ -12,4 +12,12 @@
   p {
     margin-bottom: 0;
   }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
 }

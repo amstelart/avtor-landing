@@ -10,4 +10,9 @@
   text-align: center;
   padding: 5%;
 
+  @include media-breakpoint-down(md) {
+    p {
+      font-size: 14px;
+    }
+  }
 }

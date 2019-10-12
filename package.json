@@ -22,6 +22,7 @@
     "*.scss": "stylelint --syntax=scss"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^7.1.1",
     "browser-sync": "^2.18.8",

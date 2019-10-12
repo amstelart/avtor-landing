@@ -14,16 +14,48 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 h1,.h1 {
   font-size: rem(36);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(24)
+  }
 }
 
 h2,.h2 {
   font-size: rem(30);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(20);
+  }
 }
 
 h3,.h3 {
   font-size: rem(24);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(18);
+  }
 }
 
 h5,.h5 {
   font-size: rem(18);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(16);
+  }
+}
+
+.fz-md {
+  font-size: 14px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 13px;
+  }
+}
+
+.fz-xl {
+  font-size: rem(24);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(18);
+  }
 }

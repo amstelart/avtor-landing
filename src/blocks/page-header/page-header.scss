@@ -10,17 +10,42 @@
   margin-bottom: 60px;
 
   .navbar {
-    padding: 15px 0;
+    padding-top: 15px;
+    position: relative;
+    padding-bottom: 15px;
+
+    & > .container {
+      align-items: flex-start;
+
+      .navbar-collapse {
+        align-self: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          position: absolute;
+          background: #f3e9de;
+          top: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .contacts-phone {
+    margin-top: 0;
   }
 
   &__bottom {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px 0;
 
     p {
       margin-right: auto;
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
   }
 
