@@ -31,7 +31,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="#scroll-01">Портфолио</a>
                 </li>
                 <li class="nav-item">
@@ -49,10 +49,10 @@
               </ul>
             </div>
 
-            <div class="contacts-phone d-none d-sm-block">
+            <div class="contacts-phone ml-auto">
               <i class="fas fa-mobile-alt"></i>
               <a href="tel:+79219280855" class="contacts-phone__num">+7 921 928 08 55</a>
-              <p>Есть вопросы? Звоните!</p>
+              <p class="mb-0">Есть вопросы? Звоните!</p>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -90,9 +90,9 @@
 
         <section class="landing-section bg-image py-5" style="background-image: url('img/section-bg-01.jpg');">
           <div class="container pt-5 mt-5">
-            <h2 class="h2 mb-5 pb-4" style="max-width: 740px;">Превращаем ткани <b>в шторы премиум качества</b> благодаря профессиональному пошиву и отменному вкусу дизайнера</h2>
+            <h2 class="h2 mb-5 pb-4 text-center text-lg-left" style="max-width: 740px;">Превращаем ткани <b>в шторы премиум качества</b> благодаря профессиональному пошиву и отменному вкусу дизайнера</h2>
             <div class="row mb-5 pb-4">
-              <div class="col-xl-4 mb-3">
+              <div class="col-lg-4 mb-3">
                 <div class="adv-card border-radius p-3">
                   <div class="adv-card__icon-wrap">
                     <i class="icon adv-card-icon-01"></i>
@@ -100,7 +100,7 @@
                   <p class="m-0"><b>Найдем именно вашу ткань</b>, так как имеем доступ ко всем коллекциям Москвы и Европы</p>
                 </div>
               </div>
-              <div class="col-xl-4 mb-3">
+              <div class="col-lg-4 mb-3">
                 <div class="adv-card border-radius p-3">
                   <div class="adv-card__icon-wrap">
                     <i class="icon adv-card-icon-02"></i>
@@ -108,7 +108,7 @@
                   <p class="m-0">Откроем секрет, как <b>существенно сэкономить</b> при большом объеме материала</p>
                 </div>
               </div>
-              <div class="col-xl-4 mb-3">
+              <div class="col-lg-4 mb-3">
                 <div class="adv-card border-radius p-3">
                   <div class="adv-card__icon-wrap">
                     <i class="icon adv-card-icon-03"></i>
@@ -125,7 +125,7 @@
                 <p class="fz-xl mb-4"><b>Дизайн-проект и авторский надзор в подарок</b></p>
                 <div class="counter">
                   <p>До конца акции осталось</p>
-                  <div id="zefricaTimer"></div>
+                  <div id="avtorTimer"></div>
                 </div>
               </div>
               <div class="action-box__form-wrap p-3 p-md-5 box-shadow">
@@ -135,7 +135,7 @@
                     <input type="text" class="form-control" placeholder="Имя">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Телефон">
+                    <input type="text" class="form-control phone-mask" placeholder="Телефон">
                   </div>
                   <button type="submit" class="btn w-100 mb-3 btn-primary">Отправить заявку</button>
                   <p class="small">Нажимая кнопку отправить заявку вы соглашаетесь с условием обработки персональных данных</p>
@@ -428,21 +428,25 @@
           <div class="container">
             <h2 class="h2 text-center mb-5">Почему выгодно заказть выезд дизайнера, <br>а не самим ехать в салон?</h2>
           </div>
-          <div class="adv-slider owl-carousel">
-            <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-01.jpg');">
-              <div class="adv-slider__item-num">Причина 1</div>
-              <h3>Это удобно</h3>
-              <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
-            </div>
-            <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-02.jpg');">
-              <div class="adv-slider__item-num">Причина 2</div>
-              <h3>Это удобно</h3>
-              <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
-            </div>
-            <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-03.jpg');">
-              <div class="adv-slider__item-num">Причина 3</div>
-              <h3>Это удобно</h3>
-              <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
+          <div class="adv-slider-wrap">
+            <div class="container">
+              <div class="adv-slider owl-carousel">
+                <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-01.jpg');">
+                  <div class="adv-slider__item-num">Причина 1</div>
+                  <h3>Это удобно</h3>
+                  <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
+                </div>
+                <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-02.jpg');">
+                  <div class="adv-slider__item-num">Причина 2</div>
+                  <h3>Работа со специалистом</h3>
+                  <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
+                </div>
+                <div class="adv-slider__item" style="background-image: url('img/adv-slider-img-03.jpg');">
+                  <div class="adv-slider__item-num">Причина 3</div>
+                  <h3>Это удобно</h3>
+                  <p>Вам не нужно никуда ехать, вы выбираете шторы дома за чашечкой чая в комфортной для вас обстановке и в удобное для вас время</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="container">
@@ -506,65 +510,65 @@
             <div class="review-list">
               <div class="review-card">
                 <div class="review-card__img-wrap">
-                  <img src="img/review-img.jpg" alt="">
+                  <img src="img/review-img-01.jpg" alt="">
                 </div>
                 <div class="review-card__content">
                   <h3>Отличное качество пошива и монтажа</h3>
                   <p>Виктория — профессионал своего дела! Превосходный дизайн, великолепный выбор тканей для штор и покрывал, красивые карнизы. Отличное качество пошива и монтажа! Мы с мужем остались ОЧЕНЬ довольны! И все наши друзья в восторге, честное слово! Наша квартира просто преобразилась! Очень рекомендуем ВСЕМ! Спасибо Вам, Виктория, огромное!</p>
                   <ul>
-                    <li><i class="fas fa-user"></i> <b>Татьяна</b></li>
+                    <li class="mb-1"><i class="fas fa-user"></i> <b>Татьяна</b></li>
                     <li><i class="fas fa-map-marker-alt"></i> г. Москва</li>
                   </ul>
                 </div>
               </div>
               <div class="review-card">
                 <div class="review-card__img-wrap">
-                  <img src="img/review-img.jpg" alt="">
+                  <img src="img/review-img-02.jpg" alt="">
                 </div>
                 <div class="review-card__content">
                   <h3>Индивидуальный подход и вовлеченность в ситуацию</h3>
                   <p>В выборе производителя штор для нового ремонта 3х комнатной квартиры (70 метров) нам помог дизайнер. Основная отличительная черта руководителя студии «Автор» Виктории — это индивидуальный подход и полная вовлеченность в ситуацию (бюджет, нетривиальные пожелания, сроки). В итоге имеем: на кухне — римскую штору, в детской — жалюзи идеально подобранного синего цвета, в гостиной — шторы и тюль, в спальне — шторы, тюль, занавеска у кровати. Отдельного упоминания заслуживает рулонная штора с электромеханизмом (управление с пульта, запрограммирован подъем/опускание в определенное время). Идеально подобранные цвета и материалы под интерьер, неброские и практичные. Как хозяйка двух котов отмечу, что фактически любая ткань не является котостойкой, однако нам были предложены материалы, на которых легко убираются зацепки. Все крепления и карнизы изготовлены из качественных материалов, выдерживающих тяжелые ткани и совершенно незаметных со стороны. Мы с мужем благодарим и рекомендуем данного поставщика и изготовителя интерьерного текстиля.</p>
                   <ul>
-                    <li><i class="fas fa-user"></i> <b>Вера Бутусова</b></li>
+                    <li class="mb-1"><i class="fas fa-user"></i> <b>Вера Бутусова</b></li>
                     <li><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург</li>
                   </ul>
                 </div>
               </div>
               <div class="review-card">
                 <div class="review-card__img-wrap">
-                  <img src="img/review-img.jpg" alt="">
+                  <img src="img/review-img-03.jpg" alt="">
                 </div>
                 <div class="review-card__content">
                   <h3>Качественно, профессионально, оперативно и в срок</h3>
                   <p>Благодарна дизайнеру и компании за вновь отличную работу, обращаюсь сюда уже 4 тый раз за 10 лет! Обшили диван, два кресла, 11 стульев, заказала скатерти, шторы римские и плессе. Всё качественно ,профессионально, оперативно и в срок, очень довольна. Замечательные цена и качество услуг и изделий.</p>
                   <ul>
-                    <li><i class="fas fa-user"></i> <b>osheynina</b></li>
+                    <li class="mb-1"><i class="fas fa-user"></i> <b>osheynina</b></li>
                     <li><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург</li>
                   </ul>
                 </div>
               </div>
               <div class="review-card">
                 <div class="review-card__img-wrap">
-                  <img src="img/review-img.jpg" alt="">
+                  <img src="img/review-img-04.jpg" alt="">
                 </div>
                 <div class="review-card__content">
                   <h3>Качественно, профессионально, оперативно и в срок</h3>
                   <p>Мы познакомились с Викторией и ее студией около 9 лет назад, нам нужны были шторы в загородный дом с большими сложными окнами. Мы замучились искать компанию, которая предложит что-нибудь, кроме как навесить тонны ткани, что, кстати, недешево. И вот нам повезло – Виктория придумала нам чудесные римские шторы – на лен была нашита тончайшая шерсть с изящным узором. Мы сразу влюбились в эти шторы и они висят у нас и сейчас. Наш дом наполнился уютом))). С тех пор не только обращались несколько раз – заказывали шторы, покрывала, шторы-плиссе, подушки и в дом, и в квартиру, и в офис, но Виктория еще и ежегодно ухаживает за всеми изделиями. Что нам нравится – обычно мы обсуждаем пожелания, я высылаю фотографии квартиры и Виктория приезжает с огромным количеством образцов. Всегда можно получить профессиональный совет, но при этом Виктория чутко прислушивается к нашему вкусу и пожеланиям. Прекрасное соотношение цены и качества, сроки всегда соблюдены. При развесе штор всегда аккуратны и бережны к мебели. Все наши объекты в разных стилях и везде найдены свои решения. И главное – всегда чувствуется, когда человек работает с душой и любовью к своему делу))). Мы очень рекомендуем студию «Автор»!</p>
                   <ul>
-                    <li><i class="fas fa-user"></i> <b>Юлия Климентьева</b></li>
+                    <li class="mb-1"><i class="fas fa-user"></i> <b>Юлия Климентьева</b></li>
                     <li><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург</li>
                   </ul>
                 </div>
               </div>
               <div class="review-card">
                 <div class="review-card__img-wrap">
-                  <img src="img/review-img.jpg" alt="">
+                  <img src="img/review-img-05.jpg" alt="">
                 </div>
                 <div class="review-card__content">
                   <h3>Качественно, профессионально, оперативно и в срок</h3>
                   <p>Виктория не только прекрасный мастер своего дела, но еще и великолепный человек - работать над проектами с ней было одно удовольствие! Вместе мы оформили и дачу, и загородный дом свекрови, и квартиру сестре - ВСЕМ угодили ) и все остались довольны ! Сейчас нахожусь в предвкушении работы над новой квартирой, знаю что мой дом будет наполнен уютом и красотой, благодаря не только красиво оформленным окнам, но и таким мелочам, как подушечки, покрывала, накидкам - всего того что делает дом каждого еще и теплым, милым и нежным если нужно ) Спасибо!</p>
                   <ul>
-                    <li><i class="fas fa-user"></i> <b>Наталья Рыбакова</b></li>
+                    <li class="mb-1"><i class="fas fa-user"></i> <b>Наталья Рыбакова</b></li>
                     <li><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург</li>
                   </ul>
                 </div>
@@ -585,7 +589,7 @@
                   <input type="text" class="form-control" placeholder="Имя">
                 </div>
                 <div class="col-12 col-lg-4 form-group">
-                  <input type="text" class="form-control" placeholder="Телефон">
+                  <input type="text" class="form-control phone-mask" placeholder="Телефон">
                 </div>
                 <div class="col-12 col-lg-4 form-group">
                   <button type="submit" class="btn btn-primary w-100">Отправить заявку</button>
