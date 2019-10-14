@@ -7,7 +7,11 @@
   $block-name:                &; // #{$block-name}__element
 
   &__item {
-    margin-left: 25px;
+
+    & + & {
+      margin-left: 25px;
+    }
+    display: inline-block;
   }
 
 }

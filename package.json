@@ -57,6 +57,7 @@
     "husky": "^0.14.3",
     "imagemin-pngquant": "^5.0.0",
     "lint-staged": "^5.0.0",
+    "magnific-popup": "^1.1.0",
     "merge-stream": "^1.0.1",
     "mkdirp": "^0.5.1",
     "owl.carousel": "^2.3.4",

@@ -14,5 +14,13 @@
     margin-bottom: 15px;
     display: flex;
     align-items: flex-end;
+
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
   }
 }

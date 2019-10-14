@@ -2,6 +2,11 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
+.adv-slider-wrap {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
 .adv-slider {
 
   $block-name:                &; // #{$block-name}__element
@@ -35,5 +40,62 @@
     font-weight: bold;
     padding: 5px 8px;
     margin-bottom: 30px;
+  }
+
+  .owl-nav {
+    margin: 0;
+
+    .owl-prev,
+    .owl-next {
+      outline: none;
+      width: 45px;
+      height: 45px;
+
+      @include media-breakpoint-up(md) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 80px;
+        height: 80px;
+      }
+      background: #f2d5b7 !important;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:hover {
+        background: lighten(#f2d5b7, 3%) !important;
+      }
+    }
+
+    .owl-prev {
+      left: -10px;
+
+      @include media-breakpoint-up(md) {
+        left: -47px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        left: -40px;
+      }
+    }
+    .owl-next {
+      right: -10px;
+
+      @include media-breakpoint-up(md) {
+        right: -47px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        right: -40px;
+      }
+    }
+  }
+
+  &.owl-carousel .owl-stage-outer {
+    overflow: visible;
   }
 }

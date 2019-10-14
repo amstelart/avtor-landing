@@ -118,3 +118,20 @@ img {
 .icon {
   display: inline-block;
 }
+
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  right: 0;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1046;
+}
+
+button.mfp-close, button.mfp-arrow {
+  outline: none;
+}

@@ -9,13 +9,61 @@
   border-bottom: 1px solid $border-color;
   margin-bottom: 60px;
 
+  @include media-breakpoint-down(md) {
+    margin-bottom: 10px;
+  }
+
   .navbar {
     padding-top: 15px;
     position: relative;
     padding-bottom: 15px;
 
+    @include media-breakpoint-down(md) {
+
+      padding-top: 7px !important;
+      padding-bottom: 7px !important;
+      height: 60px;
+
+      .navbar-brand {
+        margin-right: 5px;
+
+        img {
+          height: 48px;
+        }
+      }
+
+      .contacts-phone {
+
+        padding-left: 17px;
+
+        &__num {
+          font-size: 0.8rem;
+        }
+
+        .fas {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+
+      .navbar-toggler {
+        padding: 0.25rem 0.35rem;
+      }
+    }
+
+
+    .navbar-brand {
+      padding: 0;
+    }
+
     & > .container {
-      align-items: flex-start;
+      align-items: center;
 
       .navbar-collapse {
         align-self: center;
@@ -25,9 +73,50 @@
         @include media-breakpoint-down(md) {
           width: 100%;
           position: absolute;
-          background: #f3e9de;
+          background: #ead9c5;
           top: 100%;
           left: 0;
+
+          .navbar-nav {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    &--sticky {
+      // background-color: $color-darken;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      opacity: 1;
+      z-index: 10;
+      padding-top: 7px !important;
+      padding-bottom: 7px !important;
+      animation: slideInDown 0.5s 1 ease-in-out;
+      height: 60px;
+
+      .navbar-brand {
+        img {
+          height: 48px;
+        }
+      }
+
+      .contacts-phone {
+
+        &__num {
+          font-size: 1rem;
+        }
+
+        .fas {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 0.7rem;
         }
       }
     }
@@ -47,6 +136,17 @@
       margin-right: auto;
       // margin-bottom: 0;
     }
+
+    @include media-breakpoint-down(xs) {
+      padding: 10px 0;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        margin-right: inherit;
+      }
+    }
   }
 
   .navbar-light {
@@ -55,17 +155,27 @@
 
       .nav-item {
 
-        &.active {
-
-          .nav-link {
-            color: #8b6647;
-          }
-        }
       }
 
       .nav-link {
         color: #000;
+
+        &.active {
+          color: #8b6647;
+        }
       }
     }
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
