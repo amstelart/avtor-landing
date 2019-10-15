@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока modal, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.modal {
+
+  $block-name:                &; // #{$block-name}__element
+
+}
+
+.modal-header {
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+  padding: 2.5rem 2rem 0 2rem;
+
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.modal-body {
+  padding: 1rem 5rem;
+}

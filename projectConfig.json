@@ -28,7 +28,8 @@
     "adv-slider": [],
     "request-box": [],
     "landing-section": [],
-    "services": []
+    "services": [],
+    "modal": []
   },
   "addCssBefore": [
     "./src/scss/bootstrap_custom_variable.scss",
@@ -42,7 +43,6 @@
     "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/magnific-popup/dist/magnific-popup.css"
-
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
